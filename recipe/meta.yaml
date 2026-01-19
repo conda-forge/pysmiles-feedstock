@@ -1,5 +1,5 @@
 {% set name = "pysmiles" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pysmiles-{{ version }}.tar.gz
-  sha256: 9bd1da9bf172fc79f71d647d21bbba34178702c664ae0778e59b4d4d149cbe4d
+  sha256: cc78feca42d5b95dcb3033e0c89ade4886caabfefbe21d70e921815f2ddaf89b
 
 build:
   noarch: python
