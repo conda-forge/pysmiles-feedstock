@@ -145,4 +145,5 @@ Feedstock Maintainers
 =====================
 
 * [@awvwgk](https://github.com/awvwgk/)
+* [@chrisjonesBSU](https://github.com/chrisjonesBSU/)
 
