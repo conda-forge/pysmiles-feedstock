@@ -1,13 +1,13 @@
 {% set name = "pysmiles" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pysmiles-{{ version }}.tar.gz
-  sha256: 0ad8c06c37d0e64ac2af36551305f25b9713906405327b25c84729b5d5122c22
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pysmiles-{{ version }}.tar.gz
+  sha256: f46da32683dc59d209921a75b1cb61d4dfa85e08948e3bb0b356b1d3d959f78d
 
 build:
   noarch: python
@@ -17,13 +17,12 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=30.3.0
-    - pbr
+    - setuptools >=80.0
+    - setuptools-scm >=9.2
     - pip
   run:
     - python >={{ python_min }}
-    - pbr
-    - networkx
+    - networkx >=3.1
 
 test:
   imports:
